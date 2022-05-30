@@ -1,0 +1,20 @@
+version: '3.9'
+
+services:
+  api:
+    container_name: barraksbackend-app
+    image: barraksbackend-app:latest
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    env_file:
+      - .env
+    environment:
+      PORT: ${PORT}
+      APP_NAME: ${APP_NAME}
+      SALT_CRYPT_CODE: ${SALT_CRYPT_CODE}
+      DATABASE_URI: ${DATABASE_URI}
+      DATABASE_NAME: ${DATABASE_NAME}
+      SECRET_KEY_JWT: ${SECRET_KEY_JWT}
+    ports:
+      - "${PORT}:${PORT}"
