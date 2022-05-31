@@ -2,7 +2,7 @@ import { DataTypes, Model, Optional } from "sequelize";
 import sequelizeConnection from '../config';
 import PatientAttributes from '../../../domain/patient/models/patient.model';
 import User from "./user.model";
-
+import MedicalInsurance from "./medicalInsurance.model";
 
 export interface PatientInput 
 extends Optional<PatientAttributes, 'id'> {};
@@ -10,10 +10,11 @@ extends Optional<PatientAttributes, 'id'> {};
 export interface PatientOutout 
 extends Required<PatientAttributes> {};
 
-class Patient extends Model<PatientAttributes, PatientInput> implements PatientAttributes {
+class Patient extends Model<PatientAttributes, PatientInput> 
+implements PatientAttributes {
     id?: number | undefined;
     id_user!: number | undefined;
-    id_prevision!:number;
+    id_medical_Insurance!:number;
     dni_employee!: string;
     createdAt?: Date | undefined;
     updatedAt?: Date | undefined;
@@ -29,7 +30,7 @@ Patient.init({
         type: DataTypes.INTEGER,
         allowNull: false
     },
-    id_prevision: {
+    id_medical_Insurance: {
         type: DataTypes.INTEGER,
         allowNull: false
     },
@@ -39,14 +40,23 @@ Patient.init({
     }
 }, {
     timestamps: true,
-    sequelize: sequelizeConnection
+    sequelize: sequelizeConnection,
+    modelName : 'PATIENT'
 });
 
-/** */
+/** 
+ * User belongs to Patient
+*/
 Patient.belongsTo(User, {
     foreignKey: 'id_user',
     onUpdate: 'CASCADE',
     onDelete: 'CASCADE'
 });
-
+/**
+ * Medical Insurance belongs to Patient
+ */
+Patient.belongsTo(MedicalInsurance, {
+    foreignKey: 'id_medical_insurance',
+    onUpdate: 'CASCADE',
+})
 export default Patient;
