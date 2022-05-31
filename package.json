@@ -7,6 +7,7 @@
     "start": "npm run build && node dist/index",
     "start:dev": "nodemon -r dotenv/config src/index.ts",
     "start:build": "npm run build && node -r dotenv/config dist/index",
+    "docker:postgres": "docker run --name postgresql -e POSTGRES_USER=tallerdb -e POSTGRES_PASSWORD=password -p 5432:5432 -v /Users/rignmardones/privado/codeGames/universidad/tallerDB/data -d postgres",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -22,12 +23,12 @@
     "koa-bodyparser": "^4.3.0",
     "koa-pino-logger": "^4.0.0",
     "koa-router": "^8.0.0-alpha.1",
-    "mongodb": "^4.3.1",
     "pg": "^8.7.3",
     "pg-hstore": "^2.3.4",
     "pino": "^7.6.5",
     "routing-controllers": "^0.8.1",
     "sequelize": "^6.20.1",
+    "umzug": "^3.1.1",
     "uuid": "^8.3.2"
   },
   "devDependencies": {

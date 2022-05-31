@@ -18,13 +18,7 @@ declare global {
       export interface ProcessEnv {
         NODE_ENV: 'development' | 'qa' | 'production';
         PORT: number;
-        PASSPORT_APP : string;
-        SALT_CRYPT_CODE: number;
-        DATABASE_URI: string;
-        DATABASE_NAME: string;
-        SECRET_KEY_JWT: string;
-        IMDB_URL: string;
-        IMDB_API_KEY: string;
+        DB_CONNECTION_URI: string;
       }
     }
   }

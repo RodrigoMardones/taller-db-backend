@@ -1,0 +1,8 @@
+POST http://127.0.0.1:4000/contact
+Content-Type: application/json
+
+{
+    "address" : "el camino 123",
+    "phone": "+123123123",
+    "email": "test@test"
+}
