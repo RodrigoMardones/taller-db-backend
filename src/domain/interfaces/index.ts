@@ -5,3 +5,9 @@ export interface DAL <T,K> {
 export interface UseCase<T,K> {
     execute(data:T): Promise<K> | K;
 }
+
+export interface basicEntityAttributes {
+    id?: number;
+    createdAt?: Date;
+    updatedAt?: Date;
+}

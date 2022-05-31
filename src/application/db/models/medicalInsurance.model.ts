@@ -15,8 +15,8 @@ implements MedicalInsuranceAttributes {
     description!: string;
     image!: string;
     externalCode!: string;
-    createdAt?: string | undefined;
-    updatedAt?: string | undefined;   
+    createdAt?: Date | undefined;
+    updatedAt?: Date | undefined;   
 }
 
 MedicalInsurance.init({
