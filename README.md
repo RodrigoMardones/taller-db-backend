@@ -14,7 +14,7 @@ NODE_ENV=development
 DB_CONNECTION_URI="uri to database"
 ```
 
-requiere de una coneccion especifica para este caso, se puede mudar a cualquier adaptador de db, dependiendo del uso. para este caso se encuentra instalado el adaptador para postgres.
+requiere de una conexion especifica para este caso, se puede mudar a cualquier adaptador de db, dependiendo del uso. para este caso se encuentra instalado el adaptador para postgres.
 
 ```json
 {
