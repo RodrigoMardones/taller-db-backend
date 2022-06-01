@@ -6,7 +6,10 @@ import {
     Professional,
     Speciality,
     Block,
-    Schedule
+    Schedule,
+    LicenseState,
+    LicenseType,
+    MedicalLicense
 } from "./models";
 const isDev = process.env.NODE_ENV === 'development';
 
@@ -22,6 +25,9 @@ const dbInit = async () => {
     await Professional.sync({force: true});
     await Block.sync({ force: true });
     await Schedule.sync({ force: true });
+    await LicenseState.sync({force: true});
+    await LicenseType.sync({force: true});
+    await MedicalLicense.sync({force: true});
 };
 
 export default dbInit;

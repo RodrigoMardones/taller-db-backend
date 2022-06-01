@@ -6,7 +6,9 @@ import Professional from './professional.model';
 import Speciality from './speciality.model';
 import Block from "./block.model";
 import Schedule from "./schedule.model";
-
+import MedicalLicense from "./medicalLicense.model";
+import LicenseState from "./licenseState.model";
+import LicenseType from "./LicenseType.model";
 export {
     Contact,
     User,
@@ -15,5 +17,7 @@ export {
     Speciality,
     Professional,
     Block,
-    Schedule
+    Schedule,
+    MedicalLicense,
+    LicenseState,LicenseType
 };
