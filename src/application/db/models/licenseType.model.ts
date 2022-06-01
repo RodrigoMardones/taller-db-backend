@@ -1,40 +1,44 @@
-import { DataTypes, Model, Optional } from "sequelize";
+import { DataTypes, Model, Optional } from 'sequelize';
 import sequelizeConnection from '../config';
-import LicenseTypeAttributes from "../../../domain/LicenseType/models/licenseType.model";
+import LicenseTypeAttributes from '../../../domain/LicenseType/models/licenseType.model';
 
-export interface LicenseTypeInput 
-extends Optional<LicenseTypeAttributes, 'id'> {};
+export interface LicenseTypeInput
+  extends Optional<LicenseTypeAttributes, 'id'> {}
 
-export interface LicenseTypetOutout 
-extends Required<LicenseTypeAttributes> {};
+export interface LicenseTypetOutout extends Required<LicenseTypeAttributes> {}
 
-class LicenseType extends Model<LicenseTypeAttributes, LicenseTypeInput>
-implements LicenseTypeAttributes {
-    id?: number | undefined;
-    name!: string;
-    type_code!: number;
-    createdAt?: Date | undefined;
-    updatedAt?: Date | undefined;
+class LicenseType
+  extends Model<LicenseTypeAttributes, LicenseTypeInput>
+  implements LicenseTypeAttributes
+{
+  id?: number | undefined;
+  name!: string;
+  type_code!: number;
+  createdAt?: Date | undefined;
+  updatedAt?: Date | undefined;
 }
 
-LicenseType.init({
+LicenseType.init(
+  {
     id: {
-        type: DataTypes.INTEGER,
-        autoIncrement: true,
-        primaryKey: true
+      type: DataTypes.INTEGER,
+      autoIncrement: true,
+      primaryKey: true
     },
-    name : {
-        type: DataTypes.STRING,
-        allowNull: false
+    name: {
+      type: DataTypes.STRING,
+      allowNull: false
     },
     type_code: {
-        type: DataTypes.INTEGER,
-        allowNull: false
+      type: DataTypes.INTEGER,
+      allowNull: false
     }
-}, {
+  },
+  {
     timestamps: true,
     sequelize: sequelizeConnection,
     modelName: 'LYCENSE_TYPE'
-});
+  }
+);
 
 export default LicenseType;

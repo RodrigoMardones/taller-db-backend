@@ -1,4 +1,4 @@
 export default interface Health {
-    status: string;
-    timestamp: string;
+  status: string;
+  timestamp: string;
 }

@@ -11,7 +11,7 @@ class Request {
     this.instance = axios.create({
       baseURL,
       headers,
-      timeout,
+      timeout
     });
   }
 

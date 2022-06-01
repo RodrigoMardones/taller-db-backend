@@ -1,5 +1,5 @@
 {
-  "name": "barraksbackend",
+  "name": "taller-db-backend",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -7,7 +7,7 @@
     "start": "npm run build && node dist/index",
     "start:dev": "nodemon -r dotenv/config src/index.ts",
     "start:build": "npm run build && node -r dotenv/config dist/index",
-    "docker:postgres": "docker run --name postgresql -e POSTGRES_USER=tallerdb -e POSTGRES_PASSWORD=password -p 5432:5432 -v /Users/rignmardones/privado/codeGames/universidad/tallerDB/data -d postgres",
+    "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -44,6 +44,7 @@
     "@types/uuid": "^8.3.4",
     "dotenv": "^16.0.0",
     "nodemon": "^2.0.15",
+    "prettier": "^2.6.2",
     "ts-node": "^10.5.0",
     "typescript": "^4.5.5"
   }
