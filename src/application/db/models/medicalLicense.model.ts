@@ -4,7 +4,7 @@ import MedicalLicenseAttributes from "../../../domain/medicalLicense/models/medi
 import Professional from './professional.model';
 import Patient from './patient.model';
 import LicenseState from './licenseState.model';
-import LicenseType from "./LicenseType.model";
+import LicenseType from "./licenseType.model";
 
 export interface MedicalLicenseInput 
 extends Optional<MedicalLicenseAttributes, 'id'> {};

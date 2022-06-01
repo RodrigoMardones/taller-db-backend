@@ -8,7 +8,11 @@ import Block from "./block.model";
 import Schedule from "./schedule.model";
 import MedicalLicense from "./medicalLicense.model";
 import LicenseState from "./licenseState.model";
-import LicenseType from "./LicenseType.model";
+import LicenseType from "./licenseType.model";
+import MedicalCosultation from './medicalConsultation.model';
+import PaymentMethod from './paymentMethod.model';
+import Receipt from "./receipt.model";
+
 export {
     Contact,
     User,
@@ -19,5 +23,8 @@ export {
     Block,
     Schedule,
     MedicalLicense,
-    LicenseState,LicenseType
+    LicenseState,LicenseType,
+    MedicalCosultation,
+    PaymentMethod,
+    Receipt
 };
