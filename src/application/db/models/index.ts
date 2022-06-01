@@ -4,12 +4,16 @@ import Patient from "./patient.model";
 import MedicalInsurance from "./medicalInsurance.model";
 import Professional from './professional.model';
 import Speciality from './speciality.model';
+import Block from "./block.model";
+import Schedule from "./schedule.model";
+
 export {
     Contact,
     User,
     Patient,
     MedicalInsurance,
     Speciality,
-    Professional
-
-}
+    Professional,
+    Block,
+    Schedule
+};

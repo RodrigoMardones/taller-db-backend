@@ -4,7 +4,9 @@ import {
     Patient, 
     MedicalInsurance, 
     Professional,
-    Speciality
+    Speciality,
+    Block,
+    Schedule
 } from "./models";
 const isDev = process.env.NODE_ENV === 'development';
 
@@ -18,6 +20,8 @@ const dbInit = async () => {
     await User.sync({force: true});
     await Patient.sync({force: true});
     await Professional.sync({force: true});
+    await Block.sync({ force: true });
+    await Schedule.sync({ force: true });
 };
 
 export default dbInit;
