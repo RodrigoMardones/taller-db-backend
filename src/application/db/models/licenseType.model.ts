@@ -13,7 +13,7 @@ class LicenseType
 {
   id?: number | undefined;
   name!: string;
-  type_code!: number;
+  externalCode!: number;
   createdAt?: Date | undefined;
   updatedAt?: Date | undefined;
 }
@@ -29,7 +29,7 @@ LicenseType.init(
       type: DataTypes.STRING,
       allowNull: false
     },
-    type_code: {
+    externalCode: {
       type: DataTypes.INTEGER,
       allowNull: false
     }
