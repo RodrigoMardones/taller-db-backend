@@ -1,10 +1,10 @@
-import { Body, JsonController, Post } from 'routing-controllers';
+import { Body, Controller, Post } from 'routing-controllers';
 import CreateContactUseCase from '../../../domain/contact/usecases/contact.usecase';
 import ContactDAL from '../../db/DAL/contact.dal';
 
-@JsonController('/contact')
+@Controller('/contact')
 export default class ContactController {
-  @Post('')
+  @Post('/create')
   async createContact(@Body() body: any) {
     return new CreateContactUseCase(new ContactDAL()).execute(body);
   }

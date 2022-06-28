@@ -1,4 +1,4 @@
-POST http://127.0.0.1:4000/contact
+POST http://127.0.0.1:4000/contact/create
 Content-Type: application/json
 
 {

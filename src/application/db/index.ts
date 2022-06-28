@@ -20,20 +20,20 @@ const dbInit = async () => {
   /**
    * sincronizar en orden de dependencias para no generar errores asociados
    */
-  await Contact.sync({ force: true });
-  await MedicalInsurance.sync({ force: true });
-  await Speciality.sync({ force: true });
-  await User.sync({ force: true });
-  await Patient.sync({ force: true });
-  await Professional.sync({ force: true });
-  await Block.sync({ force: true });
-  await Schedule.sync({ force: true });
-  await LicenseState.sync({ force: true });
-  await LicenseType.sync({ force: true });
-  await MedicalLicense.sync({ force: true });
-  await MedicalCosultation.sync({ force: true });
-  await PaymentMethod.sync({ force: true });
-  await Receipt.sync({ force: true });
+  await Contact.sync({ alter: isDev });
+  await MedicalInsurance.sync({ alter: isDev });
+  await Speciality.sync({ alter: isDev });
+  await User.sync({ alter: isDev });
+  await Patient.sync({ alter: isDev });
+  await Professional.sync({ alter: isDev });
+  await Block.sync({ alter: isDev });
+  await Schedule.sync({ alter: isDev });
+  await LicenseState.sync({ alter: isDev });
+  await LicenseType.sync({ alter: isDev });
+  await MedicalLicense.sync({ alter: isDev });
+  await MedicalCosultation.sync({ alter: isDev });
+  await PaymentMethod.sync({ alter: isDev });
+  await Receipt.sync({ alter: isDev });
 };
 
 export default dbInit;

@@ -1,0 +1,12 @@
+POST http://127.0.0.1:4000/professional/create
+Content-Type: application/json
+
+{
+    "id_speciality": 1,
+    "id_user": 1,
+    "username" : "username",
+    "password" : "123456789",
+    "linkToConsultation": "http://linkToCall.url"
+}
+
+###
