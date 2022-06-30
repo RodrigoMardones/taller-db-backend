@@ -1,7 +1,8 @@
-import { Professional, User, Speciality } from "../models";
+import { Professional } from "../models";
 import { ProfessionalInput, ProfessionalOutput } from "../models/professional.model";
 import Bcrypt from "bcrypt";
 import IProfessionalRepository from '../../../domain/professional/repositories/professional.repository';
+
 export default class ProfessionalDAL implements IProfessionalRepository{
     async findOne(params: Partial<ProfessionalInput>): Promise<ProfessionalOutput> {
        const result = await Professional.findOne({
