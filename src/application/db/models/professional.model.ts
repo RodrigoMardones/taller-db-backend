@@ -60,12 +60,14 @@ Professional.init(
 Professional.belongsTo(User, {
   foreignKey: 'id_user',
   onUpdate: 'CASCADE',
-  onDelete: 'CASCADE'
+  onDelete: 'CASCADE',
+  as: 'user'
 });
 
 Professional.belongsTo(Speciality, {
   foreignKey: 'id_speciality',
-  onUpdate: 'CASCADE'
+  onUpdate: 'CASCADE',
+  as: 'speciality'
 });
 
 export default Professional;

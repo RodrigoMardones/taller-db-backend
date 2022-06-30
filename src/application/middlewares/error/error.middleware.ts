@@ -16,13 +16,13 @@ export default class ErrorMiddleware {
       const parsedErr = parseError(error);
       const traceID = uuidv4();
       traceLogger.info({
-        errorName: parsedErr.name,
+        errorName: parsedErr.message,
         code: context.response.status || 500,
         traceID
       });
       context.status = 400;
       context.body = {
-        message: parsedErr.name,
+        message: parsedErr.message,
         traceID
       };
     }

@@ -3,6 +3,9 @@ import { User } from '../models';
 import { DAL } from '../../../domain/interfaces';
 
 export default class UserDAL implements DAL<UserInput, UserOutput>{
+    findOne(params: unknown): Promise<UserOutput> {
+        throw new Error('Method not implemented.');
+    }
     findAll(): Promise<UserOutput[]> {
         throw new Error('Method not implemented.');
     }

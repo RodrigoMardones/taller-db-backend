@@ -2,7 +2,7 @@ POST http://127.0.0.1:4000/user/create
 Content-Type: application/json
 
 {
-    "dni" : "111111111",
+    "dni" : "22222222",
     "names": "JHON DOE",
     "surnames": "KNOU NUTING",
     "birthdate": "1994-07-10T04:00:00.000Z"   

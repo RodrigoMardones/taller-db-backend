@@ -5,6 +5,7 @@ const connectionUri = process.env.DB_CONNECTION_URI as string;
 
 const sequelizeConnection = new Sequelize(connectionUri, {
   dialect: 'postgres',
+  logging: false,
   dialectOptions: {
     ssl: {
       rejectUnauthorized: false,

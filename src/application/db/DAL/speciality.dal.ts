@@ -4,6 +4,9 @@ import Speciality from '../models/speciality.model';
 import Professional from '../models/professional.model';
 
 export default class SpecialityDAL implements DAL<SpecialityInput, SpecialityOutput> {
+    findOne(params: unknown): Promise<SpecialityOutput> {
+        throw new Error("Method not implemented.");
+    }
     async findAll(): Promise<SpecialityOutput[]> {
         const allSpecialities = await Speciality.findAll();
         return allSpecialities.map(speciality => speciality.get()) as SpecialityOutput[];

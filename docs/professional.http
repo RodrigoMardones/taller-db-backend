@@ -4,9 +4,17 @@ Content-Type: application/json
 {
     "id_speciality": 1,
     "id_user": 1,
-    "username" : "username",
+    "username" : "try0wasp1",
     "password" : "123456789",
     "linkToConsultation": "http://linkToCall.url"
 }
 
-###
+######
+
+POST http://127.0.0.1:4000/professional/login
+Content-Type: application/json
+
+{
+    "username" : "try0wasp1",
+    "password": "123456789"
+}

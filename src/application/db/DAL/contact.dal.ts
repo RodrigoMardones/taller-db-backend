@@ -3,6 +3,9 @@ import { Contact } from '../models';
 import { ContactInput, ContactOutput } from '../models/contact.model';
 
 class ContactDAL implements DAL<ContactInput, ContactOutput> {
+  findOne(params: unknown): Promise<ContactOutput> {
+    throw new Error('Method not implemented.');
+  }
   findAll(): Promise<ContactOutput[]> {
     throw new Error('Method not implemented.');
   }
