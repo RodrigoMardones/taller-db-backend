@@ -18,3 +18,8 @@ Content-Type: application/json
     "username" : "try0wasp1",
     "password": "123456789"
 }
+
+######
+
+POST http://127.0.0.1:4000/professional/logout
+X-Session-Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ0cnkwd2FzcDEiLCJpYXQiOjE2NTY1NTY3NTcsImV4cCI6MTY1NzE2MTU1N30.Xccb-C8eVE8-4dFGzORmIXCzIVEFIYOfPZWFhIXzzes
