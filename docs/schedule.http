@@ -9,7 +9,7 @@ Content-Type: application/json
 
 ######
 
-GET http://127.0.0.1:4000/schedule/professional/1
+GET http://127.0.0.1:4000/schedule/professional/2
 
 
 
