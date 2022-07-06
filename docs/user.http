@@ -5,7 +5,7 @@ Content-Type: application/json
     "dni" : "22222222",
     "names": "JHON DOE",
     "surnames": "KNOU NUTING",
-    "birthdate": "1994-07-10T04:00:00.000Z"   
+    "birthdate": "1994-07-10"   
 }
 
 ######

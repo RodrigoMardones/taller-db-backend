@@ -4,6 +4,7 @@ import ProfessionalController from './professional/professional.controller';
 import UserController from './user/user.controller';
 import SpecialityController from './speciality/speciality.controller';
 import BlockController from './block/block.controller';
+import ScheduleController from './schedule/schedule.controller';
 
 export const controllers = [
   HealthController,
@@ -11,5 +12,6 @@ export const controllers = [
   ProfessionalController,
   UserController,
   SpecialityController,
-  BlockController
+  BlockController,
+  ScheduleController
 ];
