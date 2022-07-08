@@ -2,9 +2,9 @@ POST http://127.0.0.1:4000/block/create
 Content-Type: application/json
 
 {
-  "startTime": "12:00",
-  "finishTime": "13:00",
-  "description": "BLOQUE-4"
+  "startTime": "14:00",
+  "finishTime": "15:00",
+  "description": "BLOQUE-5"
 }
 
 ######

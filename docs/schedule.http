@@ -2,14 +2,14 @@ POST http://127.0.0.1:4000/schedule/create
 Content-Type: application/json
 
 {
-  "id_professional": 1,
-  "id_block": 1,
+  "id_professional": 4,
+  "id_block": 4,
   "currentDate": "2022-07-06"
 }
 
 ######
 
-GET http://127.0.0.1:4000/schedule/professional/2
+GET http://127.0.0.1:4000/schedule/professional/4
 
 
 

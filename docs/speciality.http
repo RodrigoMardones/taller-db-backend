@@ -2,7 +2,7 @@ POST http://127.0.0.1:4000/speciality/create
 Content-Type: application/json
 
 {
-    "name": "PSICOLOGIA-3",
+    "name": "PSICOLOGIA-4",
     "value": 20000,
     "currency": "CLP"
 }

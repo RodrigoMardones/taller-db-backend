@@ -22,4 +22,4 @@ Content-Type: application/json
 ######
 
 POST http://127.0.0.1:4000/professional/logout
-X-Session-Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ0cnkwd2FzcDEiLCJpYXQiOjE2NTY1NTY3NTcsImV4cCI6MTY1NzE2MTU1N30.Xccb-C8eVE8-4dFGzORmIXCzIVEFIYOfPZWFhIXzzes
+X-Session-Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiI0IiwiaWF0IjoxNjU3MjMzOTMzLCJleHAiOjE2NTc4Mzg3MzN9.hqKHSv4C8sWJzaBZHUaHWdvAliDfkIA2ErkWV-asNWo
