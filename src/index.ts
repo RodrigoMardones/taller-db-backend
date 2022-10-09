@@ -1,5 +1,5 @@
 import 'reflect-metadata';
-import Server from './infraestructure/server';
+import Server from './infrastructure/server';
 import { controllers } from './application/controllers';
 import { middlewares } from './application/middlewares';
 import dbInit from './application/db';

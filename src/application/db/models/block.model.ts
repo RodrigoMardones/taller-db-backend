@@ -41,7 +41,7 @@ Block.init(
   {
     timestamps: true,
     sequelize: sequelizeConnection,
-    modelName: 'BLOCK'
+    modelName: 'block'
   }
 );
 
